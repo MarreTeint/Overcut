@@ -1,0 +1,108 @@
+.titre{
+	font-size: 5em;
+	display: inline;
+}
+
+.divblanc{
+	background-color: rgba(255, 255, 255, 0.9);
+	min-height: 100vh;
+}
+
+.Erreur{
+	color: red;
+}
+
+.rouge{
+	background: #e10600;
+	color: white;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: rgba(255, 24, 1, 0.2);
+}
+
+#accueil{
+	background: url(fondaccueil.jpg);
+	background-size: cover;
+	min-width: 736px
+}
+#compte{
+	background: url(fondcompte.jpg);
+	background-size: cover;
+}
+#bio{
+	background: url(fondbio.jpg);
+	background-size: cover;
+	margin 0;
+}
+#actu{
+		background: url(fondactu.jpg);
+	background-size: cover;
+	margin 0;
+}
+#result{
+		background: url(fondresult.jpg);
+	background-size: cover;
+}
+
+#creaforum{
+	background: url(fond_crea_forum.jpg);
+	background-size: cover;
+}
+
+#forum{
+	background: url(fond_crea_forum.jpg);
+	background-size: cover;
+}
+
+#pos{
+	background: url(f1_classement.jpg);
+	background-size: cover;
+}
+
+#connexion{
+	background-image: url('fond_connexion.jpg');
+	background-repeat: repeat;
+	background-size: cover;
+	margin 0;
+}
+
+#form {
+	background-color: rgba(255, 255, 255, 0.75);
+	display: block;
+	padding-bottom: 10px;
+}
+#form a{
+	color: black;
+}
+
+#menu a{
+	color: white;
+}
+
+#nrep, .cache{
+	display: none;
+}
+#espace{
+	border-collapse:separate;
+	border-spacing: 0 25px;
+}
+
+label{
+	font-weight: bold;
+}
+
+header,footer{
+	background: #e10600;
+
+}
+
+h5{
+	display: inline;
+}
+
+a{
+	color: blue;
+}
+
+

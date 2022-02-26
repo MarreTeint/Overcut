@@ -1,0 +1,20 @@
+1;33;Max Verstappen;Red Bull;25:38.426;+3 points_
+2;44;Lewis Hamilton;Mercedes;+1.430;+2 points_
+3;77;Valtteri Bottas;Mercedes;+7.502;+1 point_
+4;16;Charles Leclerc;Ferrari;+11.278;0_
+5;4;Lando Norris;McLaren;+24.111;0_
+6;3;Daniel Ricciardo;McLaren;+30.959;0_
+7;14;Fernando Alonso;Alpine F1 Team;+43.527;0_
+8;5;Sebastian Vettel;Aston Martin;+44.439;0_
+9;63;George Russell;Williams;+46.652;0_
+10;31;Esteban Ocon;Alpine F1 Team;+47.395;0_
+11;55;Carlos Sainz;Ferrari;+47.798;0_
+12;10;Pierre Gasly;AlphaTauri;+48.763;0_
+13;7;Kimi Räikkönen;Alfa Romeo;+50.677;0_
+14;18;Lance Stroll;Aston Martin;+52.179;0_
+15;99;Antonio Giovinazzi;Alfa Romeo;+53.225;0_
+16;22;Yuki Tsunoda;AlphaTauri;+53.567;0_
+17;6;Nicholas Latifi;Williams;+55.162;0_
+18;47;Mick Schumacher;Haas F1 Team;+68.213;0_
+19;9;Nikita Mazepin;Haas F1 Team;+77.648;0_
+20;11;Sergio Perez;Red Bull;Abandon;0|
