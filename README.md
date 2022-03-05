@@ -32,7 +32,7 @@ To make a site gathering data on Formula 1 (standings, race results, ...) and to
 ## Project status
 Today, the mandatory constraints of the project are completed. The optional constraints remain to be developed. However, the site now includes all the functionalities necessary for its proper functioning.
 
-I will not elaborate further on this website.
+I will not elaborate further on this project.
 
 ## How to have a quick look at the project
 You can have a look of how the project work at the webpage [marreteintproject.epizy.com](https://marreteintproject.epizy.com/)
