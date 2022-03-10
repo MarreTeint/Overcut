@@ -60,7 +60,7 @@
                     $c=$i+1;
                     echo "<tr>
                             <td>".$c."</td>";
-                            if(num){echo "<td>".$parsedjsonb->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'QualifyingResults'}[$i]->{'Driver'}->{'permanentNumber'}."</td>";}
+                            if($num){echo "<td>".$parsedjsonb->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'QualifyingResults'}[$i]->{'Driver'}->{'permanentNumber'}."</td>";}
                             echo "
                             <td>".$parsedjsonb->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'QualifyingResults'}[$i]->{'Driver'}->{'givenName'}." ".$parsedjsonb->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'QualifyingResults'}[$i]->{'Driver'}->{'familyName'}."</td>
                             <td>".$parsedjsonb->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'QualifyingResults'}[$i]->{'Constructor'}->{'name'}."</td>
@@ -127,7 +127,7 @@
                     while(isset($parsedjsona->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[$j])){
                         $d=$j+1;
                         echo "<td>".$d."</td>";
-                            if(num){echo "<td>".$parsedjsona->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[$j]->{'Driver'}->{'permanentNumber'}."</td>";}
+                            if($num){echo "<td>".$parsedjsona->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[$j]->{'Driver'}->{'permanentNumber'}."</td>";}
                             echo "
                             <td>".$parsedjsona->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[$j]->{'Driver'}->{'givenName'}." ".$parsedjsona->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[$j]->{'Driver'}->{'familyName'}." ";
                                 //FL
