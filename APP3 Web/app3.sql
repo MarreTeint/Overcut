@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Hôte : sql312.epizy.com
--- Généré le :  sam. 26 fév. 2022 à 09:51
--- Version du serveur :  10.3.27-MariaDB
--- Version de PHP :  7.2.22
+-- Host: localhost:3306
+-- Generation Time: Mar 12, 2022 at 03:08 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `epiz_30843661_app3`
+-- Database: `app3`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `comptes`
+-- Table structure for table `comptes`
 --
 
 CREATE TABLE `comptes` (
@@ -36,7 +36,7 @@ CREATE TABLE `comptes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `comptes`
+-- Dumping data for table `comptes`
 --
 
 INSERT INTO `comptes` (`id`, `pseudo`, `mdp`, `role`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `comptes` (`id`, `pseudo`, `mdp`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `forum`
+-- Table structure for table `forum`
 --
 
 CREATE TABLE `forum` (
@@ -56,16 +56,17 @@ CREATE TABLE `forum` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `forum`
+-- Dumping data for table `forum`
 --
 
 INSERT INTO `forum` (`idfo`, `nom`, `auteur`) VALUES
-(25, 'Bienvenue', 'Martin');
+(25, 'Bienvenue', 'Martin'),
+(26, 'test', 'Martin');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `postforum`
+-- Table structure for table `postforum`
 --
 
 CREATE TABLE `postforum` (
@@ -73,36 +74,37 @@ CREATE TABLE `postforum` (
   `idcompte` int(11) NOT NULL,
   `idforum` int(11) NOT NULL,
   `message` longtext NOT NULL,
-  `heure` datetime NOT NULL DEFAULT current_timestamp()
+  `heure` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `postforum`
+-- Dumping data for table `postforum`
 --
 
 INSERT INTO `postforum` (`idpost`, `idcompte`, `idforum`, `message`, `heure`) VALUES
-(24, 1, 25, 'Bonjour et bienvenue sur mon projet web pour Polytech Paris Saclay', '2022-01-24 18:42:14');
+(24, 1, 25, 'Bonjour et bienvenue sur mon projet web pour Polytech Paris Saclay', '2022-01-24 18:42:14'),
+(25, 1, 26, 'test', '2022-02-26 15:54:37');
 
 --
--- Index pour les tables déchargées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `comptes`
+-- Indexes for table `comptes`
 --
 ALTER TABLE `comptes`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `pseudo` (`pseudo`);
 
 --
--- Index pour la table `forum`
+-- Indexes for table `forum`
 --
 ALTER TABLE `forum`
   ADD PRIMARY KEY (`idfo`),
   ADD KEY `auteur` (`auteur`);
 
 --
--- Index pour la table `postforum`
+-- Indexes for table `postforum`
 --
 ALTER TABLE `postforum`
   ADD PRIMARY KEY (`idpost`),
@@ -110,39 +112,39 @@ ALTER TABLE `postforum`
   ADD KEY `fk_idforum` (`idforum`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `comptes`
+-- AUTO_INCREMENT for table `comptes`
 --
 ALTER TABLE `comptes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT pour la table `forum`
+-- AUTO_INCREMENT for table `forum`
 --
 ALTER TABLE `forum`
-  MODIFY `idfo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `idfo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT pour la table `postforum`
+-- AUTO_INCREMENT for table `postforum`
 --
 ALTER TABLE `postforum`
-  MODIFY `idpost` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `idpost` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- Contraintes pour les tables déchargées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `forum`
+-- Constraints for table `forum`
 --
 ALTER TABLE `forum`
   ADD CONSTRAINT `forum_ibfk_1` FOREIGN KEY (`auteur`) REFERENCES `comptes` (`pseudo`);
 
 --
--- Contraintes pour la table `postforum`
+-- Constraints for table `postforum`
 --
 ALTER TABLE `postforum`
   ADD CONSTRAINT `fk_idcompte` FOREIGN KEY (`idcompte`) REFERENCES `comptes` (`id`),
