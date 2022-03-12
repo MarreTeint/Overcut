@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 12, 2022 at 03:08 PM
+-- Generation Time: Mar 12, 2022 at 03:11 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -60,8 +60,7 @@ CREATE TABLE `forum` (
 --
 
 INSERT INTO `forum` (`idfo`, `nom`, `auteur`) VALUES
-(25, 'Bienvenue', 'Martin'),
-(26, 'test', 'Martin');
+(25, 'Bienvenue', 'Martin');
 
 -- --------------------------------------------------------
 
@@ -82,8 +81,7 @@ CREATE TABLE `postforum` (
 --
 
 INSERT INTO `postforum` (`idpost`, `idcompte`, `idforum`, `message`, `heure`) VALUES
-(24, 1, 25, 'Bonjour et bienvenue sur mon projet web pour Polytech Paris Saclay', '2022-01-24 18:42:14'),
-(25, 1, 26, 'test', '2022-02-26 15:54:37');
+(24, 1, 25, 'Bonjour et bienvenue sur mon projet web pour Polytech Paris Saclay', '2022-01-24 18:42:14');
 
 --
 -- Indexes for dumped tables
