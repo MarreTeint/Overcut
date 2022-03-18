@@ -16,7 +16,7 @@
             <?php include 'Projet.php' ?>
             <h1 class="text-center m-3 font-weight-bold">Actualités : </h1>
                 <?php 
-                    $obj = file_get_contents('https://newsapi.org/v2/everything?q=f1&domains=lequipe.fr&sortBy=publishedAt&apiKey=be2fd14991f94284a1e36e5e78b94fb3');
+                    $obj = file_get_contents('https://newsapi.org/v2/everything?q=f1&domains=lequipe.fr&sortBy=publishedAt&apiKey=/*YOUR NEWS API KEY HERE*/');
                     $parsedjson = json_decode($obj);
 
                     $i=0;
