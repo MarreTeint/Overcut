@@ -41,7 +41,8 @@ You can have a look of how the project work at the webpage [marreteintproject.ep
 1. Put the **htdocs folder** where there should be your website.
 2. Create a database and import the **app3.sql** file on it.
 3. You may need to adapt the **htdocs/bdd.php** file to make it work properly on your database.
-4. Enjoy !
+4. Create an account at [News API](https://newsapi.org/) and put your personnal key at **htdocs/Actualite.php**
+5. Enjoy !
 
 ## Licence
 The project is licensed under GPL-3.0 
