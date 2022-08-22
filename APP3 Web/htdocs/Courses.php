@@ -16,14 +16,14 @@
             <?php include 'Projet.php' ?>  
             <?php echo "<h1 class='text-center m-3 font-weight-bold'>";
                     if(isset($_GET['Year'])){echo "Toutes les courses en ".$_GET['Year'];}
-                    else{echo "Toutes les courses en 2021";}
+                    else{echo "Toutes les courses en 2022";}
                     echo "</h1>";
             ?>
             <form class="col-10 col-xl-6 m-2" action="Courses.php" method="GET">
             <select class="form-select" name="Year" required>
                 <option selected disabled value="">Année</option>
                 <?php
-                $i=2021;
+                $i=2022;
                 while($i>1950){
                     echo "<option>".$i."</option>";
                     $i=$i-1;
