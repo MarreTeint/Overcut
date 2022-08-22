@@ -14,14 +14,14 @@
                     $i=22;
                     $nb=0;
                     while($nb<3){
-                    $url='https://ergast.com/api/f1/2021/'.$i.'/results.json';
+                    $url='https://ergast.com/api/f1/2022/'.$i.'/results.json';
                     
                     $obj = file_get_contents($url);
                     $parsedjson = json_decode($obj);
 
                     if(isset($parsedjson->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'raceName'})){
                         $nb=$nb+1;
-                        echo "<a class='m-1' style='text-decoration: none;' href='fullresult.php?id=".$i."&Year=2021'><button class='btn btn-block rouge'><h4>Podium : 1-";
+                        echo "<a class='m-1' style='text-decoration: none;' href='fullresult.php?id=".$i."&Year=2022'><button class='btn btn-block rouge'><h4>Podium : 1-";
                         echo strtoupper($parsedjson->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[0]->{'Driver'}->{'familyName'});
                         echo " 2-";
                         echo $parsedjson->{'MRData'}->{'RaceTable'}->{'Races'}[0]->{'Results'}[1]->{'Driver'}->{'code'};
