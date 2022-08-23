@@ -35,7 +35,7 @@ Today, the mandatory constraints of the project are completed. The optional cons
 I will not elaborate further on this project.
 
 ## How to have a quick look at the project
-You can have a look of how the project work at the webpage [marreteintproject.epizy.com](https://marreteintproject.epizy.com/)
+You can have a look of how the project work at the webpage [martinsebirot.com/Overcut/APP3%20Web/htdocs/](https://martinsebirot.com/Overcut/APP3%20Web/htdocs/)
 
 ## How to install
 1. Put the **htdocs folder** where there should be your website.
